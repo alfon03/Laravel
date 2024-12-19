@@ -5,7 +5,9 @@
 <x-layout  meta-title="Home">
 
     <x-slot:sidebar>
-        Home:sidebar
+
+    
+
     </x-slot:sidebar>
 
   

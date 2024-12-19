@@ -1,0 +1,98 @@
+/* Paleta de Colores */
+:root {
+    --barn-red: #780000ff;
+    --fire-brick: #c1121fff;
+    --papaya-whip: #fdf0d5ff;
+    --prussian-blue: #003049ff;
+    --air-superiority-blue: #669bbcff;
+}
+
+h1.text-danger {
+    color: var(--fire-brick); 
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+img.img-fluid {
+    border: 5px solid var(--fire-brick); 
+    border-radius: 15px; 
+    margin-bottom: 30px; 
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    border: 2px solid var(--fire-brick); 
+    margin-bottom: 30px; 
+    border-radius: 15px;
+}
+
+.card-body {
+    background-color: #f8d7da; 
+}
+
+.card-title {
+    color: var(--barn-red); 
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background-color: var(--barn-red);
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 15px;
+}
+
+.table th {
+    color: white;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 1rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1; 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr td.text-danger {
+    color: var(--barn-red); 
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+}

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\gitftsController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -24,6 +26,11 @@ Route::view("/", "home")->name("home");
 
 Route::view("/about", "about")->name("about");
 
-Route::view("/blog", "blog")->name("blog");
+Route::get("/blog", [PostController::class, 'index'])->name("blog");
+
+Route::get("/letter", [gitftsController::class, 'index'])->name("letter");
 
 Route::view("/contact", "contact")->name("contact");
+
+Route::view("/gift", "gift")->name("gift");
+

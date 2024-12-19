@@ -10,8 +10,20 @@
                     <a class="nav-link text-white" href="{{route('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-white" href="{{route('letter')}}"><span class="material-symbols-outlined">
+                        mail
+                        </span></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-white" href="{{route('blog')}}">Blog</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{route('gift')}}"><span class="material-symbols-outlined">
+                        featured_seasonal_and_gifts
+                        </span></a>
+                </li>
+
+                
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{{route('about')}}">About</a>
                 </li>
